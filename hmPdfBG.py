@@ -300,7 +300,7 @@ def bgGetProductClothTube(textValue,productObj):
     hmClothTubeEye   =  0
     hmClothTubeHook  =  0
     try:
-        product_matchObj = re.finditer( r'布筒((:)|(：))?\s?(\d*)MM', textValue)
+        product_matchObj = re.finditer( r'(布筒((:)|(：))?\s?(\d*)MM)|(布筒:,(\d*)MM)', textValue)
         if product_matchObj:
 
             tubeArr = []
